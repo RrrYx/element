@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>哈哈</h2>
+    <button @click="hitme">点我</button>
     <span class="iconfont">&#xe601;</span><span class="iconfont">&#x33;</span><span class="iconfont">&#x33;</span>
     <ul>
       <li>
@@ -91,7 +92,14 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
+  methods: {
+    hitme(){
+      this.$router.push({
+        name: 'hitme'
+      })
+    }
+  },
 }
 </script>
 
