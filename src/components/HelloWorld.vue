@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>哈哈</h2>
+    <span class="iconfont">&#xe601;</span><span class="iconfont">&#x33;</span><span class="iconfont">&#x33;</span>
     <ul>
       <li>
         <a
@@ -96,6 +97,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@import url('../styles/reset.css');
 h1, h2 {
   font-weight: normal;
 }
