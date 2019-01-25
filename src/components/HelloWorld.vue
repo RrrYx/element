@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>哈哈</h2>
+    <router-view></router-view>
     <button @click="hitme">点我</button>
     <span class="iconfont">&#xe601;</span><span class="iconfont">&#x33;</span><span class="iconfont">&#x33;</span>
     <ul>
@@ -96,7 +97,12 @@ export default {
   methods: {
     hitme(){
       this.$router.push({
-        name: 'hitme'
+        name: 'hitme',
+        query:{
+          id:1,
+          name:'hehe',
+          num:10
+        }
       })
     }
   },
